@@ -1,5 +1,5 @@
 # dotfiles
-- 🐧 This is my personal configuration reposity
+- 🐧 This is my personal configuration repository
 - 🥺 Idk what i'm doing so be patient
 
 ## welcome
