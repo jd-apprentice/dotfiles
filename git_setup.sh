@@ -13,6 +13,6 @@ git add .
 git commit -m "Identity for @jd_apprentice in the gitconfig"
 git push origin master
 
-git remote add upstream git@github.com:jd_apprentice/dotfiles.git
+git remote add upstream git@github.com:jd-apprentice/dotfiles.git
 
 echo "👌 Awesome, all set."
