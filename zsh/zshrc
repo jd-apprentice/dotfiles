@@ -8,7 +8,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="af-magic"
+ZSH_THEME="hyperzsh"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -96,12 +96,15 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias projects="cd /media/jd-apprentice/Datos/Proyectos"
-alias data="cd /media/jd-apprentice/Datos"
+alias projects="cd Documents/Proyectos"
+alias docs="cd Documents"
+alias work="cd Documents/Trabajo"
 alias c="clear"
 alias x="exit"
 alias h="history -10"
 alias hc="history -c"
+alias stats="neofetch"
+alias lvim="/home/jd-apprentice/.local/bin/lvim"
 # https://www.speedtest.net/apps/cli
 alias st="speedtest"
 # https://github.com/sindresorhus/clipboard-cli
