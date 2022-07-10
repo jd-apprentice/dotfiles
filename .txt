@@ -1,0 +1,41 @@
+Alacritty
+Insomnia
+KeePass2
+Peek
+RunJs
+Nodejs
+Mongodb Compass
+Teams
+Git
+Slack
+Discord
+Vim
+Edge
+Visual Studio Code 
+
+VSC Extensions ->
+
+Auto Rename Tag
+Discord Rich Presence
+Docker
+Eslint
+Gitlens
+Live Server
+Markdown Preview
+Prettier
+Remote - SSH
+Solidity
+Tabnine
+The Doki Theme
+vscode-icons
+
+Browser Extensions ->
+Json Formatter
+Wappalyzer
+Gnome Extensions
+Metamask
+
+Gnome Extensions ->
+Desktop Icons
+Floating Dock
+Screenshot Tool
