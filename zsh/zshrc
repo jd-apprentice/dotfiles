@@ -8,7 +8,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="hyperzsh"
+ZSH_THEME="smt"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -71,10 +71,12 @@ ZSH_THEME="hyperzsh"
 plugins=(git fzf alias-finder zsh-autosuggestions)
 ZSH_ALIAS_FINDER_AUTOMATIC=true
 bindkey '^ ' autosuggest-accept
+export ZSH=/home/jonathan/.oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
+
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
@@ -96,21 +98,23 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias projects="cd Documents/Proyectos"
-alias docs="cd Documents"
-alias work="cd Documents/Trabajo"
-alias c="clear"
+alias work="cd /home/jonathan/Documents/Trabajo"
+alias projects="cd /home/jonathan/Documents/Proyectos"
+alias c="clear" # ctrl + l do the same.
 alias x="exit"
-alias h="history -10"
-alias hc="history -c"
 alias stats="neofetch"
 alias lvim="/home/jd-apprentice/.local/bin/lvim"
-# https://www.speedtest.net/apps/cli
-alias st="speedtest"
-# https://github.com/sindresorhus/clipboard-cli
-# npm install -g clipboard-cli
-alias cb="clipboard"
+alias dolar="node /home/jonathan/Documents/Proyectos/CurrencyLister ."
+alias weather="curl wttr.in"
 
+# NVM Config
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# bun completions
+[ -s "/home/jonathan/.bun/_bun" ] && source "/home/jonathan/.bun/_bun"
+
+# Bun
+export BUN_INSTALL="/home/jonathan/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
