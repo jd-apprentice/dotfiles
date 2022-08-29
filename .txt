@@ -1,5 +1,5 @@
 Tmux
-Alacritty
+Kitty
 Dbeaver
 Insomnia
 RunJs
@@ -11,7 +11,6 @@ Discord
 Vim
 Edge
 Visual Studio Code
-RetroArch
 SublimeMerge
 
 VSC Extensions ->
