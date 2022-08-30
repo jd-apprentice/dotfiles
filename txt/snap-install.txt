@@ -1,0 +1,4 @@
+dbeaver-ce
+flameshot
+vlc
+insomnia

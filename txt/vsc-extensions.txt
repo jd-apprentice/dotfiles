@@ -1,0 +1,10 @@
+auto rename tag
+discord rich presence
+eslint
+astro
+gitlens
+markdown preview
+prettier
+tabnine
+the doki theme
+vscode-icons
