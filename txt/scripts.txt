@@ -1,0 +1,3 @@
+./directory.sh
+./git-install.sh
+./install.sh
