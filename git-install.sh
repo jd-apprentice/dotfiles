@@ -1,3 +1,8 @@
+#!/bin/bash
+
+echo "Type your Github username: "
+read github
+
 echo "Type in your first and last name (no accent or special characters - e.g. 'ç'): "
 read full_name
 
@@ -8,7 +13,7 @@ git config --global user.email "$email"
 git config --global user.name "$full_name"
 
 git add .
-git commit -m "Identity for @jd_apprentice in the gitconfig"
+git commit -m "Identity for $github in the gitconfig"
 git push origin master
 
 git remote add upstream git@github.com:jd-apprentice/dotfiles.git
