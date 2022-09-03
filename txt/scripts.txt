@@ -1,3 +1,5 @@
 ./directory.sh
 ./git-install.sh
 ./install.sh
+./download.sh
+./utils/location.sh
