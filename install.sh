@@ -31,8 +31,9 @@ else
   echo "$1 does not exist"
 fi
 
-# post-install
-sudo apt install -f
+# install peer-dependencies
+sudo apt install -f -y
 
 # finished installation
 echo "🏁 Done"
+clear

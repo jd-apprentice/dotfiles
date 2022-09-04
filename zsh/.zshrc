@@ -99,7 +99,7 @@ alias c="clear" # ctrl + l do the same.
 alias x="exit"
 alias stats="neofetch"
 alias lvim="/home/jd-apprentice/.local/bin/lvim"
-alias dolar="node /home/jonathan/Documents/Proyectos/CurrencyLister ."
+alias dolar="node /home/jonathan/Documents/Proyectos/cli-currency ."
 alias weather="curl wttr.in"
 alias conf="vim ~/.config/kitty/kitty.conf"
 
@@ -107,10 +107,3 @@ alias conf="vim ~/.config/kitty/kitty.conf"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-# bun completions
-[ -s "/home/jonathan/.bun/_bun" ] && source "/home/jonathan/.bun/_bun"
-
-# Bun
-export BUN_INSTALL="/home/jonathan/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
