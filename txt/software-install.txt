@@ -1,5 +1,7 @@
+curl
 wget
 zsh
 tmux
 kitty
 fonts-powerline
+neofetch

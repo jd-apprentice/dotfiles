@@ -129,10 +129,18 @@ I created the script called `directory.sh` for that task.
 ```bash
 #!/bin/bash
 
+echo "🔴 Moving to Home..."
+
+cd $HOME
+
 echo "🔴 Creating base folders..."
 
 mkdir Documents/Trabajo
 mkdir Documents/Proyectos
+
+echo "🟢 Coming back to the folder repository..."
+
+cd dotfiles/
 
 echo "🟢 Copying configuration files..."
 
@@ -140,6 +148,8 @@ cp -r ./kitty ~/.config
 cp ./zsh/.zshrc $HOME
 
 echo "🏁 Finished"
+
+clear
 ```
 
 ## Section 4:
@@ -175,6 +185,12 @@ for file in $(cat ./txt/scripts.txt);
 ./install.sh txt/software-install.txt
 ./install.sh txt/snap-install.txt
 ./install.sh ~/Downloads
+./post-install.sh
 ./directory.sh
 ./git-install.sh
+
+# Post install
+clear
+# Setting zsh as default shell
+chsh -s $(which zsh)
 ```

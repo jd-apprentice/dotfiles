@@ -3,3 +3,4 @@
 ./install.sh
 ./download.sh
 ./utils/location.sh
+./post-install.sh
