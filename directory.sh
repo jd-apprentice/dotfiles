@@ -1,5 +1,9 @@
 #!/bin/bash
 
+echo "Moving to Home..."
+
+cd $HOME
+
 echo "🔴 Creating base folders..."
 
 mkdir Documents/Trabajo
