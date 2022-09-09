@@ -7,6 +7,12 @@
 
 ![image](https://data.whicdn.com/images/245075010/original.gif)
 
+
+## examples 
+
+![Screen](https://user-images.githubusercontent.com/68082746/189459762-ffae4a9f-cd24-426c-be43-f8b13e372d12.png)
+![Screen2](https://user-images.githubusercontent.com/68082746/189459902-8cce450a-8be7-4e02-b6df-9254bd28a3ce.png)
+
 # What we are trying to learn about here?
 
 - The objetive of this section is about learning about saving and re-use the configuration if we change our environment or we want to try a new distribution etc.
