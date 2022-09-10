@@ -93,15 +93,16 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias work="cd /home/jonathan/Documents/Trabajo"
-alias projects="cd /home/jonathan/Documents/Proyectos"
+alias work="cd ~/Documents/Trabajo"
+alias projects="cd ~/Documents/Proyectos"
 alias c="clear" # ctrl + l do the same.
 alias x="exit"
 alias stats="neofetch"
-alias lvim="/home/jd-apprentice/.local/bin/lvim"
-alias dolar="node /home/jonathan/Documents/Proyectos/cli-currency ."
+alias dolar="node ~/Documents/Proyectos/cli-currency ."
 alias weather="curl wttr.in"
 alias conf="vim ~/.config/kitty/kitty.conf"
+alias ec2="projects && cd AWS/ && kitty +kitten ssh -i AWS_UBUNTU_2022.pem ec2-user@ec2-34-207-85-157.compute-1.amazonaws.com"
+alias audacity="cd ~/Documents/Apps/squashfs-root/ && ./AppRun"
 
 # NVM Config
 export NVM_DIR="$HOME/.nvm"
