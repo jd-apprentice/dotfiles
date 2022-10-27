@@ -3,12 +3,15 @@
 - 🐧 This is my personal configuration repository
 - 🥺 Idk what i'm doing so be patient
 
+## work in progress
+
+- Currently building a version for Arch (since i'm migrating there)
+
 ## welcome
 
 ![image](https://data.whicdn.com/images/245075010/original.gif)
 
-
-## examples 
+## examples
 
 ![Screen](https://user-images.githubusercontent.com/68082746/189459762-ffae4a9f-cd24-426c-be43-f8b13e372d12.png)
 ![Screen2](https://user-images.githubusercontent.com/68082746/189459902-8cce450a-8be7-4e02-b6df-9254bd28a3ce.png)

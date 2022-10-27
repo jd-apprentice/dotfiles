@@ -71,7 +71,7 @@ ZSH_THEME="smt"
 plugins=(git fzf alias-finder zsh-autosuggestions)
 ZSH_ALIAS_FINDER_AUTOMATIC=true
 bindkey '^ ' autosuggest-accept
-export ZSH=/home/jonathan/.oh-my-zsh
+export ZSH=/home/mgjdts/.oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 # User configuration
 
@@ -98,11 +98,7 @@ alias projects="cd ~/Documents/Proyectos"
 alias c="clear" # ctrl + l do the same.
 alias x="exit"
 alias stats="neofetch"
-alias dolar="node ~/Documents/Proyectos/cli-currency ."
-alias weather="curl wttr.in"
 alias conf="vim ~/.config/kitty/kitty.conf"
-alias ec2="projects && cd AWS/ && kitty +kitten ssh -i AWS_UBUNTU_2022.pem ec2-user@ec2-34-207-85-157.compute-1.amazonaws.com"
-alias audacity="cd ~/Documents/Apps/squashfs-root/ && ./AppRun"
 
 # NVM Config
 export NVM_DIR="$HOME/.nvm"

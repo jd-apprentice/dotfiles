@@ -4,3 +4,4 @@
 ./download.sh
 ./utils/location.sh
 ./post-install.sh
+./pem.sh

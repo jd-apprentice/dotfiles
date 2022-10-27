@@ -7,15 +7,16 @@ for file in $(cat ./txt/scripts.txt);
   done;
 
 # Running scripts
-./download.sh
-./install.sh txt/software-install.txt
-./install.sh txt/snap-install.txt
-./install.sh ~/Downloads
-./post-install.sh
-./directory.sh
-./git-install.sh
+./scripts/install.sh txt/pacman.txt
+./scripts/install.sh txt/yay.txt
+./scripts/install.sh txt/repos.txt
+#./scripts/post-install.sh
+#./scripts/directory.sh
+#./scripts/git-install.sh
+#./scripts/pem.sh
 
 # Post install
 clear
+
 # Setting zsh as default shell
 chsh -s $(which zsh)

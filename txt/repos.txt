@@ -1,0 +1,6 @@
+https://aur.archlinux.org/visual-studio-code-bin.git
+https://aur.archlinux.org/discord_arch_electron.git
+https://aur.archlinux.org/insomnia-bin.git
+https://aur.archlinux.org/librewolf-bin.git
+https://aur.archlinux.org/runjs-bin.git
+https://aur.archlinux.org/virtualbox-ext-oracle.git
