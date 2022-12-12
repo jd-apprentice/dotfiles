@@ -21,7 +21,7 @@ source $ZSH/oh-my-zsh.sh
 # Aliases
 
 alias ..="cd .."
-alias apg install="sudo apt install"
+alias apt install="sudo apt install"
 alias work="cd ~/Documents/Trabajo"
 alias projects="cd ~/Documents/Proyectos"
 alias c="clear"
@@ -30,7 +30,6 @@ alias stats="neofetch"
 alias weather="curl wttr.in"
 alias conf="vim ~/.config/kitty/kitty.conf"
 alias notes="cd /media/jonathan/c72f5751-c2bf-4f78-ab01-4c46b4e1db80/Apps/Standard-Notes && ./AppRun"
-alias dio_root="ssh root@143.244.169.211"
 alias busy='my_file=$(find /usr/include -type f | sort -R | head -n 1); my_len=$(wc -l $my_file | awk "{print $1}"); let "r = $RANDOM % $my_len" 2>/dev/null; vim +$r $my_file'
 
 # NVM Config
