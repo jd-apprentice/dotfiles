@@ -21,7 +21,7 @@ source $ZSH/oh-my-zsh.sh
 # Aliases
 
 alias ..="cd .."
-alias apt install="sudo apt install"
+alias app_add="sudo apt install"
 alias work="cd ~/Documents/Trabajo"
 alias projects="cd ~/Documents/Proyectos"
 alias c="clear"
