@@ -17,5 +17,6 @@ for file in $(cat ./txt/scripts.txt);
 
 # Post install
 clear
+
 # Setting zsh as default shell
 chsh -s $(which zsh)
