@@ -1,7 +1,9 @@
 curl
 wget
+vim
 zsh
 tmux
 kitty
 fonts-powerline
 neofetch
+dino-im

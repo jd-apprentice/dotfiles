@@ -166,7 +166,7 @@ Then once we run this script it will give permissions to the others and run them
 # Permissions for the scripts
 for file in $(cat ./txt/scripts.txt);
   do
-    chmod +x $file;
+    chmod +x ./scripts/$file;
   done;
 
 # Running scripts
@@ -244,6 +244,8 @@ ln -s -f .tmux/.tmux.conf
 echo "🛠️ Copying config..."
 cp .tmux/.tmux.conf.local .
 
+####### DOCKER ########
+
 # Allow user to use a repository over HTTPS
 echo "⌛️ Repository over HTTPS..."
 sudo apt-get install \
@@ -252,16 +254,27 @@ sudo apt-get install \
     gnupg \
     lsb-release
 
-# Adding up GPG Key
+# Adding up GPG Key & Setting up the repository
 echo "🛠️ Adding up the GPG Key..."
 sudo mkdir -p /etc/apt/keyrings
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
 
-# Set repository
-echo "🛠️ Setting up the repository..."
-echo \
-  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
-  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+available_os=( 'Debian' 'CentOS' 'Fedora' 'Ubuntu' )
+actual_system=$(cat /etc/issue)
+
+echo "🛠️ Checking distribution..."
+for element in "${available_os[@]}"; do
+  if [[ "${actual_system}" == *"Debian"* ]]; then
+    curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+    echo \
+      "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/debian \
+      $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+  elif [[ "${actual_system}" == *"Ubuntu"* ]]; then
+    curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+    echo \
+      "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+      $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+  fi
+done
 
 # Install Docker Engine, containerd, and Docker Compose
 echo "🛠️ Installing everything..."

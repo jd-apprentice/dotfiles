@@ -2,29 +2,25 @@
 
 ######## oh-my-zsh ########
 
-# install oh-my-zsh
 echo "🎳 Installing oh-my-zsh..."
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-# install fzf
 echo "🎲 Installing fzf..."
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
 
-# install zsh-autosuggestions
 echo "🎷 Cloning the zsh-autosuggestions repo..."
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 
 ######## nvm ########
 
-# install nvm
 echo "🎯 Installing nvm..."
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 
 echo "🔌 Getting node lts..."
 nvm install --lts
 
-######## vs-code ########
+######## VSCode ########
 
 # doki theme
 echo "🎮 Setting up theme for doki..."
@@ -32,7 +28,6 @@ sudo chown -R $(whoami) /usr/share/code/resources/app/out/vs/workbench
 
 ######## TMUX ########
 
-# go $HOME
 echo "🔴 Moving to Home..."
 cd
 
@@ -48,6 +43,8 @@ ln -s -f .tmux/.tmux.conf
 echo "🛠️ Copying config..."
 cp .tmux/.tmux.conf.local .
 
+####### DOCKER ########
+
 # Allow user to use a repository over HTTPS
 echo "⌛️ Repository over HTTPS..."
 sudo apt-get install \
@@ -56,16 +53,27 @@ sudo apt-get install \
     gnupg \
     lsb-release
 
-# Adding up GPG Key
+# Adding up GPG Key & Setting up the repository
 echo "🛠️ Adding up the GPG Key..."
 sudo mkdir -p /etc/apt/keyrings
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
 
-# Set repository
-echo "🛠️ Setting up the repository..."
-echo \
-  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
-  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+available_os=( 'Debian' 'CentOS' 'Fedora' 'Ubuntu' )
+actual_system=$(cat /etc/issue)
+
+echo "🛠️ Checking distribution..."
+for element in "${available_os[@]}"; do
+  if [[ "${actual_system}" == *"Debian"* ]]; then
+    curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+    echo \
+      "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/debian \
+      $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+  elif [[ "${actual_system}" == *"Ubuntu"* ]]; then
+    curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+    echo \
+      "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+      $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+  fi 
+done
 
 # Install Docker Engine, containerd, and Docker Compose
 echo "🛠️ Installing everything..."

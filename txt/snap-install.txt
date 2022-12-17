@@ -1,3 +1,2 @@
 dbeaver-ce
 vlc
-insomnia
