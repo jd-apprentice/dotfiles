@@ -9,6 +9,9 @@ echo "🔴 Creating base folders..."
 mkdir Documents/Trabajo
 mkdir Documents/Proyectos
 
+mkdir ~/.icons
+mkdir ~/.themes
+
 echo "🟢 Coming back to the folder repository..."
 
 cd dotfiles/

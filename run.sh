@@ -13,6 +13,7 @@ for file in $(cat ./txt/scripts.txt);
 ./scripts/install.sh ~/Downloads
 ./scripts/post-install.sh
 ./scripts/directory.sh
+./scripts/themes.sh
 ./scripts/git-install.sh
 
 # Post install
