@@ -1,5 +1,9 @@
 # Here we are going to explain in detail each of the steps that are running in the script
 
+## What we are trying to learn about here?
+
+- The objetive of this section is about learning about saving and re-use the configuration if we change our environment or we want to try a new distribution etc.
+
 ## Section 1:
 
 ### Identify our configuration and applications that we're going to save
