@@ -27,9 +27,8 @@
 What i'm going to save?
 
 - kitty.conf - startup.conf - theme.conf - kitty-themes
-- .alacritty.yml
 - zsh
-- apt/snap/deb applications
+- yay/pacman applications
 
 ![image](https://cdn.discordapp.com/attachments/610338409671557121/1015386630674194513/unknown.png)
 
