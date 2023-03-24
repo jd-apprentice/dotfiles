@@ -6,6 +6,5 @@ tmux
 kitty
 fonts-powerline
 neofetch
-dino-im
 gnome-shell-extensions
 gnome-tweaks

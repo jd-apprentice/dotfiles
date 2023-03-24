@@ -9,7 +9,6 @@ for file in $(cat ./txt/scripts.txt);
 # Running scripts
 ./scripts/download.sh
 ./scripts/install.sh txt/software-install.txt
-./scripts/install.sh txt/snap-install.txt
 ./scripts/install.sh ~/Downloads
 ./scripts/post-install.sh
 ./scripts/directory.sh

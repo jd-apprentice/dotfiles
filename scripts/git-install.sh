@@ -9,4 +9,7 @@ read email
 git config --global user.email "$email"
 git config --global user.name "$full_name"
 
+echo "📰 Setting up your SSH key for GitHub..."
+ssh-keygen -t rsa -b 4096 -C "$email"
+
 echo "👌 Awesome, all set."
