@@ -8,3 +8,4 @@ fonts-powerline
 neofetch
 gnome-shell-extensions
 gnome-tweaks
+gnome-shell-extension-manager
