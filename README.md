@@ -3,20 +3,38 @@
 - 🐧 This is my personal configuration repository
 - 🥺 Idk what i'm doing so be patient
 
-## welcome
+## 🏠 Welcome
 
 ![image](https://data.whicdn.com/images/245075010/original.gif)
 
 ## Examples
 
+### 2023
+
+[Screencast from 02-04-23 19:26:21.webm](https://user-images.githubusercontent.com/68082746/229385697-654eab17-eba0-4152-b13d-c2ed33d3924f.webm)
+
+### 2022
+
 ![Screen](https://user-images.githubusercontent.com/68082746/189459762-ffae4a9f-cd24-426c-be43-f8b13e372d12.png)
 ![Screen2](https://user-images.githubusercontent.com/68082746/189459902-8cce450a-8be7-4e02-b6df-9254bd28a3ce.png)
 
-## I want to use your script myself, can I use it?
+## 📚 I want to use your script myself, can I use it?
 
 - Yes you can! but there are a lot of personal stuff that i use in my daily basis so is up to you to modify that or use my personal config, I suggest if you want to use my configuration that at least you don't execute the post-install script, you can comment that from the `run.sh` script.
 
 - For more information and to understand what does each file in order to modify them, check the [INSTALL](./INSTALL.md) file
+
+## 🔗 Links 
+
+- [video-wallpaper](https://github.com/ghostlexly/gpu-video-wallpaper)
+- [neofetch-themes](https://github.com/Chick2D/neofetch-themes)
+- [gnome-themes](https://www.gnome-look.org/browse/)
+- [kitty-themes](https://github.com/dexpota/kitty-themes)
+- [doki-theme](https://doki-theme.unthrottled.io/products/)
+- [cava](https://github.com/karlstav/cava)
+- [cmus](https://cmus.github.io/)
+- [ulauncher](https://ulauncher.io/)
+- [autokey](https://github.com/autokey/autokey)
 
 ## 📝 License
 
