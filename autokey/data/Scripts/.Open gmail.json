@@ -1,0 +1,28 @@
+{
+    "type": "script",
+    "description": "Open gmail",
+    "store": {},
+    "modes": [
+        3
+    ],
+    "usageCount": 3,
+    "prompt": false,
+    "omitTrigger": false,
+    "showInTrayMenu": false,
+    "abbreviation": {
+        "abbreviations": [],
+        "backspace": true,
+        "ignoreCase": false,
+        "immediate": false,
+        "triggerInside": false,
+        "wordChars": "[\\w]"
+    },
+    "hotkey": {
+        "modifiers": [],
+        "hotKey": "<np_page_down>"
+    },
+    "filter": {
+        "regex": null,
+        "isRecursive": false
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "5e3e4c79-dd59-4cb9-b1a7-784ffcc06ae8": {
+        "id": "5e3e4c79-dd59-4cb9-b1a7-784ffcc06ae8",
+        "name": "Google Search",
+        "keyword": "g",
+        "cmd": "https://google.com/search?q=%s",
+        "icon": "/usr/share/ulauncher/media/google-search-icon.png",
+        "is_default_search": true,
+        "run_without_argument": false,
+        "added": 1673899381.4928901
+    },
+    "2a9d8e44-d2c8-4119-9c77-a0b8474c0cd3": {
+        "id": "2a9d8e44-d2c8-4119-9c77-a0b8474c0cd3",
+        "name": "Stack Overflow",
+        "keyword": "so",
+        "cmd": "https://stackoverflow.com/search?q=%s",
+        "icon": "/usr/share/ulauncher/media/stackoverflow-icon.svg",
+        "is_default_search": true,
+        "run_without_argument": false,
+        "added": 1673899381.492908
+    },
+    "eaef34f8-5d13-4bda-b990-42771d73bf57": {
+        "id": "eaef34f8-5d13-4bda-b990-42771d73bf57",
+        "name": "Wikipedia",
+        "keyword": "wiki",
+        "cmd": "https://en.wikipedia.org/wiki/%s",
+        "icon": "/usr/share/ulauncher/media/wikipedia-icon.png",
+        "is_default_search": true,
+        "run_without_argument": false,
+        "added": 1673899381.4929225
+    },
+    "e3d88d65-4ea9-4151-b873-54afb945942d": {
+        "id": "e3d88d65-4ea9-4151-b873-54afb945942d",
+        "name": "Anime Flv",
+        "keyword": "anf",
+        "cmd": "https://www3.animeflv.net/browse?q=%s",
+        "icon": "~/Pictures/FB_IMG_1674475056373.jpg",
+        "is_default_search": false,
+        "run_without_argument": false,
+        "added": 1674922015.0866442
+    }
+}

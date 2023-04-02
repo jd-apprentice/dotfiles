@@ -14,6 +14,7 @@ source $ZSH/oh-my-zsh.sh
 alias ..="cd .."
 alias work="cd ~/Documents/Trabajo"
 alias projects="cd ~/Documents/Proyectos"
+alias uni="cd ~/Documents/Universidad"
 alias c="clear"
 alias x="exit"
 alias conf="vim ~/.config/kitty/kitty.conf"

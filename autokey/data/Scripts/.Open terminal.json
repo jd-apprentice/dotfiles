@@ -1,0 +1,28 @@
+{
+    "type": "script",
+    "description": "Open terminal",
+    "store": {},
+    "modes": [
+        3
+    ],
+    "usageCount": 2,
+    "prompt": false,
+    "omitTrigger": false,
+    "showInTrayMenu": false,
+    "abbreviation": {
+        "abbreviations": [],
+        "backspace": true,
+        "ignoreCase": false,
+        "immediate": false,
+        "triggerInside": false,
+        "wordChars": "[\\w]"
+    },
+    "hotkey": {
+        "modifiers": [],
+        "hotKey": "<np_down>"
+    },
+    "filter": {
+        "regex": null,
+        "isRecursive": false
+    }
+}

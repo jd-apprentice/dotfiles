@@ -60,6 +60,14 @@ sudo mkdir -p /etc/apt/keyrings
 available_os=( 'Debian' 'CentOS' 'Fedora' 'Ubuntu' )
 actual_system=$(cat /etc/issue)
 
+# Video wallpaper 🎥
+echo "🎥 Installing video wallpaper..."
+
+git clone https://github.com/ghostlexly/gpu-video-wallpaper.git
+cd gpu-video*
+./install.sh
+
+# Docker 🐋
 echo "🛠️ Checking distribution..."
 for element in "${available_os[@]}"; do
   if [[ "${actual_system}" == *"Debian"* ]]; then

@@ -3,6 +3,8 @@ wget
 vim
 zsh
 tmux
+cava
+cmus
 kitty
 fonts-powerline
 neofetch
