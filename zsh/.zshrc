@@ -23,12 +23,3 @@ alias conf="vim ~/.config/kitty/kitty.conf"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-# Debian Variables
-export DEBFULLNAME="Jonathan Dyallo"
-export DEBEMAIL="contacto@jonathan.com.ar"
-
-# Bun
-[ -s "/home/jonathan/.bun/_bun" ] && source "/home/jonathan/.bun/_bun"
-BUN_INSTALL="/home/jonathan/.bun"
-PATH="$BUN_INSTALL/bin:$PATH"

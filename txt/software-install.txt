@@ -1,13 +1,14 @@
-curl
-wget
 vim
 zsh
+curl
+wget
 tmux
 cava
 cmus
 kitty
-fonts-powerline
 neofetch
+python3-pip
+fonts-powerline
 gnome-shell-extensions
 gnome-tweaks
 gnome-shell-extension-manager

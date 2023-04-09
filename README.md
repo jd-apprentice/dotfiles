@@ -11,7 +11,19 @@
 
 ### 2023
 
-[Screencast from 02-04-23 19:26:21.webm](https://user-images.githubusercontent.com/68082746/229385697-654eab17-eba0-4152-b13d-c2ed33d3924f.webm)
+[2023](https://user-images.githubusercontent.com/68082746/229385697-654eab17-eba0-4152-b13d-c2ed33d3924f.webm)
+
+### Tweaks
+
+![Tweaks](https://i.imgur.com/McwlrKo.png)
+
+### Extension Manager
+
+![Extension-Manager-Manual](https://i.imgur.com/CyB8KzG.png)
+
+### System Extensions
+
+![System](https://i.imgur.com/m3IUaiP.png)
 
 ### 2022
 
@@ -20,11 +32,12 @@
 
 ## 📚 I want to use your script myself, can I use it?
 
+- To execute everything just type `make` or `make <script>` to execute a specific script
 - Yes you can! but there are a lot of personal stuff that i use in my daily basis so is up to you to modify that or use my personal config, I suggest if you want to use my configuration that at least you don't execute the post-install script, you can comment that from the `run.sh` script.
 
-- For more information and to understand what does each file in order to modify them, check the [INSTALL](./INSTALL.md) file
+- For more information and to understand what does each file in order to modify them, check the [INSTALL](./INSTALL.md) file [outdated]
 
-## 🔗 Links 
+## 🔗 Links
 
 - [video-wallpaper](https://github.com/ghostlexly/gpu-video-wallpaper)
 - [neofetch-themes](https://github.com/Chick2D/neofetch-themes)

@@ -20,12 +20,6 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 echo "🔌 Getting node lts..."
 nvm install --lts
 
-######## VSCode ########
-
-# doki theme
-echo "🎮 Setting up theme for doki..."
-sudo chown -R $(whoami) /usr/share/code/resources/app/out/vs/workbench
-
 ######## TMUX ########
 
 echo "🔴 Moving to Home..."
@@ -57,8 +51,16 @@ sudo apt-get install \
 echo "🛠️ Adding up the GPG Key..."
 sudo mkdir -p /etc/apt/keyrings
 
-available_os=( 'Debian' 'CentOS' 'Fedora' 'Ubuntu' )
-actual_system=$(cat /etc/issue)
+# Docker 🐋
+echo "🛠️ Checking distribution..."
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+
+# Install Docker Engine, containerd, and Docker Compose
+echo "🛠️ Installing everything..."
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 
 # Video wallpaper 🎥
 echo "🎥 Installing video wallpaper..."
@@ -67,24 +69,25 @@ git clone https://github.com/ghostlexly/gpu-video-wallpaper.git
 cd gpu-video*
 ./install.sh
 
-# Docker 🐋
-echo "🛠️ Checking distribution..."
-for element in "${available_os[@]}"; do
-  if [[ "${actual_system}" == *"Debian"* ]]; then
-    curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
-    echo \
-      "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/debian \
-      $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-  elif [[ "${actual_system}" == *"Ubuntu"* ]]; then
-    curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
-    echo \
-      "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
-      $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-  fi 
-done
+# Librewolf 🦊
 
-# Install Docker Engine, containerd, and Docker Compose
-echo "🛠️ Installing everything..."
-sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+sudo apt update && sudo apt install -y wget gnupg lsb-release apt-transport-https ca-certificates
+
+distro=$(if echo " una vanessa focal jammy bullseye vera uma" | grep -q " $(lsb_release -sc) "; then echo $(lsb_release -sc); else echo focal; fi)
+
+wget -O- https://deb.librewolf.net/keyring.gpg | sudo gpg --dearmor -o /usr/share/keyrings/librewolf.gpg
+
+sudo tee /etc/apt/sources.list.d/librewolf.sources << EOF > /dev/null
+Types: deb
+URIs: https://deb.librewolf.net
+Suites: $distro
+Components: main
+Architectures: amd64
+Signed-By: /usr/share/keyrings/librewolf.gpg
+EOF
+
+sudo apt update
+
+sudo apt install librewolf -y
 
 clear
