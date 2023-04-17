@@ -39,7 +39,6 @@
 
 ## 🔗 Links
 
-- [video-wallpaper](https://github.com/ghostlexly/gpu-video-wallpaper)
 - [neofetch-themes](https://github.com/Chick2D/neofetch-themes)
 - [gnome-themes](https://www.gnome-look.org/browse/)
 - [kitty-themes](https://github.com/dexpota/kitty-themes)
