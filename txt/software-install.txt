@@ -1,3 +1,4 @@
+fx
 vim
 zsh
 curl
@@ -7,6 +8,7 @@ cava
 cmus
 kitty
 neofetch
+mysql-client
 python3-pip
 fonts-powerline
 gnome-shell-extensions

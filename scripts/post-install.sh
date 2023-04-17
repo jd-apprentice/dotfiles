@@ -62,13 +62,6 @@ echo \
 echo "🛠️ Installing everything..."
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 
-# Video wallpaper 🎥
-echo "🎥 Installing video wallpaper..."
-
-git clone https://github.com/ghostlexly/gpu-video-wallpaper.git
-cd gpu-video*
-./install.sh
-
 # Librewolf 🦊
 
 sudo apt update && sudo apt install -y wget gnupg lsb-release apt-transport-https ca-certificates
