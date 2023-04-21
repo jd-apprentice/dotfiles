@@ -65,9 +65,7 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 # Librewolf 🦊
 
 sudo apt update && sudo apt install -y wget gnupg lsb-release apt-transport-https ca-certificates
-
 distro=$(if echo " una vanessa focal jammy bullseye vera uma" | grep -q " $(lsb_release -sc) "; then echo $(lsb_release -sc); else echo focal; fi)
-
 wget -O- https://deb.librewolf.net/keyring.gpg | sudo gpg --dearmor -o /usr/share/keyrings/librewolf.gpg
 
 sudo tee /etc/apt/sources.list.d/librewolf.sources << EOF > /dev/null
@@ -80,7 +78,18 @@ Signed-By: /usr/share/keyrings/librewolf.gpg
 EOF
 
 sudo apt update
-
 sudo apt install librewolf -y
 
 clear
+
+# TablePlus 🐘
+
+# Add TablePlus gpg key
+wget -qO - https://deb.tableplus.com/apt.tableplus.com.gpg.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/tableplus-archive.gpg > /dev/null
+
+# Add TablePlus repo
+sudo add-apt-repository "deb [arch=amd64] https://deb.tableplus.com/debian/22 tableplus main"
+
+# Install
+sudo apt update
+sudo apt install tableplus -y

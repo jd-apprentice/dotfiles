@@ -3,4 +3,3 @@ https://github.com/lukehaas/RunJS/releases/download/v2.6.0/runjs_2.6.0_amd64.deb
 https://az764295.vo.msecnd.net/stable/784b0177c56c607789f9638da7b6bf3230d47a8c/code_1.71.0-1662018389_amd64.deb
 https://github.com/Ulauncher/Ulauncher/releases/download/5.15.2/ulauncher_5.15.2_all.deb
 https://github.com/autokey/autokey/releases/download/v0.96.0/autokey-common_0.96.0_all.deb
-https://github.com/Kong/insomnia/releases/download/core%402023.1.0/Insomnia.Core-2023.1.0.deb

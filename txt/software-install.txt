@@ -8,9 +8,9 @@ cava
 cmus
 kitty
 neofetch
-mysql-client
 python3-pip
+mysql-client
+gnome-tweaks
 fonts-powerline
 gnome-shell-extensions
-gnome-tweaks
 gnome-shell-extension-manager

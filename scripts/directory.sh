@@ -23,9 +23,9 @@ echo "🟢 Copying configuration files..."
 cp -r ./kitty ~/.config
 cp -r ./ulauncher ~/.config
 cp -r ./autokey ~/.config
+cp -r ./neofetch ~/.config
 cp -r ./extensions ~/.local/share/gnome-shell
 cp ./zsh/.zshrc $HOME
-cp ./neofetch/config.conf ~/.config/neofetch
 
 echo "🏁 Finished"
 
