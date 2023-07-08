@@ -7,6 +7,20 @@
 
 ![image](https://data.whicdn.com/images/245075010/original.gif)
 
+## 🏝 Visuals
+
+**desklet**
+
+- System monitor graph
+- Clock desklet
+
+**theme**
+
+- Numix Cinnamon Transparent
+- Bibata Modern Classic
+- Mint Y Dark Aqua
+- Mint Y Legacy Blue
+
 ## 📚 I want to use your script myself, can I use it?
 
 - To execute everything just type `make` or `make <script>` to execute a specific script
