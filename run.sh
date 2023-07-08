@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sudo apt-get install -y && sudo apt upgrade
-sudo apt-get install git curl wget zsh tmux cmus cava -y
+sudo apt-get cmus cava -y
 
 ######## oh-my-zsh ########
 echo "🎳 Installing oh-my-zsh..."
