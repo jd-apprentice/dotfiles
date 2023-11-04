@@ -17,13 +17,26 @@ alias c="clear"
 alias x="exit"
 alias kittycfg="nano ~/.config/kitty/kitty.conf"
 alias zshcfg="nano ~/.zshrc"
+alias dio_root=""
+alias webdock=""
+alias aws_portfolio=""
+alias balena="$HOME/Apps/balena.AppImage"
+alias keepass="$HOME/Apps/keepass.AppImage"
+alias retro="$HOME/Apps/RetroArch.AppImage"
+alias cord="$HOME/Apps/WebCord-4.3.0-x64.AppImage"
+alias cursor="$HOME/Apps/Cursor.AppImage"
+alias slack="$HOME/Apps/Slack.AppImage"
+alias lens="$HOME/Apps/Lens.AppImage"
+alias neofetch="neofetch --ascii_distro windowscd"
 
 # NVM Config
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-# Environment Variables
-export GPT_KEY=""
-export STABILITY_API_KEY=""
+export GPT_KEY=''
+export STABILITY_API_KEY=''
 export GH_KEY=""
+export DIO_TOKEN=""
+export CONSUMER_KEY=""
+export CONSUMER_SECRET=""
