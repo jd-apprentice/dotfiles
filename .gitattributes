@@ -10,3 +10,5 @@ readme.md linguist-detectable=true
 *.js linguist-generated=true
 *.js linguist-documentation=false
 *.js linguist-detectable=false
+*.png linguist-detectable=true
+*.jpeg linguist-detectable=true
