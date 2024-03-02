@@ -1,8 +1,3 @@
-# Dotfiles
-
-- 🐧 This is my personal configuration repository
-- 🥺 Idk what i'm doing so be patient
-
 ## 🏝 Visuals
 
 **desklet**

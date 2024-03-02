@@ -6,7 +6,7 @@ update:
 	sudo apt-get update -y && sudo apt-get upgrade -y
 
 dependencies: update
-	sudo apt-get install git curl wget zsh tmux cmus cava python3-pip -y
+	sudo apt-get install git curl wget zsh tmux cmus cava kitty python3-pip -y
 
 git:
 	chmod +x git.sh
