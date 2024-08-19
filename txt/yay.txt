@@ -1,1 +1,3 @@
 vscodium-bin
+teams-for-linux-bin
+microsoft-edge-stable-bin

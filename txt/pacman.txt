@@ -1,7 +1,11 @@
 curl
 wget
-zsh
-tmux
-kitty
-fonts-powerline
-neofetch
+fastfetch
+nemo
+pavucontrol
+tree
+docker
+docker-compose
+ansible-core
+terraform
+openfortivpn

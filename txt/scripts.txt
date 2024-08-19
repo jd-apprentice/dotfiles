@@ -3,5 +3,6 @@
 ./install.sh
 ./download.sh
 ./utils/location.sh
+./pre-install.sh
 ./post-install.sh
 ./pem.sh

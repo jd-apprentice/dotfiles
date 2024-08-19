@@ -1,28 +1,30 @@
 #!/bin/bash
 
-# variables
+arg=$1
+
 pacman=pacman.txt
 yay=yay.txt
 repos=repos.txt
 
-# pacman applications
-if [[ $1 = txt/$pacman ]]; then
-  echo "🔴 Installing apt packages..."
-  for f in $(cat $1);
+if [[ "$arg" = "txt/$pacman" ]]; then
+  echo "🔴 Installing pacman packages..."
+  for f in $(cat "$arg");
   do 
     yes | sudo pacman -S $f;
   done;
-# yay applications
-elif [[ $1 = txt/$yay ]]; then
-  echo "🔴 Installing snap packages..."
-  for f in $(cat $1);
+fi
+
+if [[ "$arg" = "txt/$yay" ]]; then
+  echo "🔴 Installing yay packages..."
+  for f in $(cat "$arg");
   do 
     sudo yay -S $f;
   done;
-# aur packages
-elif [[ $1 = txt/$repos ]]; then
-  echo "🔴 Installing deb packages..."
-  for f in $1/*.git;
+fi
+
+if [[ "$arg" = "txt/$repos" ]]; then
+  echo "🔴 Installing native packages..."
+  for f in "$arg"/*.git;
   do 
     sudo git clone $f
     sudo chown -R whoami $f
@@ -30,14 +32,8 @@ elif [[ $1 = txt/$repos ]]; then
     makepkg -si
     cd ..
   done;
-# wrong file name
-else
-  echo "$1 does not exist"
 fi
 
-# update dependencies
 sudo pacman -Syu
-
-# finished installation
 echo "🏁 Done"
 clear
