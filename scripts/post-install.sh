@@ -22,3 +22,7 @@ systemctl start docker.service
 
 rm -rf $HOME/dotfiles
 rm $HOME/RiceInstaller
+
+######## rsync ########
+cp utils/.rsyncignore $HOME
+cp utils/backup /usr/local/bin/backup

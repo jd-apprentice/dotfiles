@@ -1,19 +1,21 @@
 #!/bin/bash
+## Usage: backup.sh [number of nodes]
+## EDIT: rsyncignore
 
 BASE_NAME="node"
 DOMAIN=".local"
 START_NUM=0
-END_NUM=3
+END_NUM=${1:-3}
 USER=$(whoami)
-REMOTE_PATH="$HOME/backup"
-LOCAL_PATH="$HOME/.config"
+REMOTE_PATH="$HOME/backup/rsync"
+LOCAL_PATH="$HOME/"
 
 for ((i=START_NUM; i<=END_NUM; i++)); do
     HOST="${BASE_NAME}$(printf "%02d" $i)${DOMAIN}"
     REMOTE_DEST="${USER}@${HOST}:${REMOTE_PATH}"
     
     echo "Doing backup for $HOST..."
-    rsync -a --progress --delete --quiet -e ssh "$LOCAL_PATH" "$REMOTE_DEST"
+    rsync -aAXHvr --verbose --filter="merge $HOME/.config/rsyncignore" -e ssh "$LOCAL_PATH" "$REMOTE_DEST" 
     
     if [ ! $? -eq 0 ]; then
         echo "Err while doing backup for $HOST. Skipping..."
