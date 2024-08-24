@@ -9,3 +9,6 @@ docker-compose
 ansible-core
 terraform
 openfortivpn
+telegram-desktop
+cronie
+rsync
