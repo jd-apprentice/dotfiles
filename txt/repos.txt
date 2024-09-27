@@ -1,3 +1,2 @@
-https://aur.archlinux.org/ulauncher.git
 https://aur.archlinux.org/librewolf-bin.git
 https://aur.archlinux.org/runjs-bin.git

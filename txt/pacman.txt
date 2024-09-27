@@ -12,3 +12,15 @@ openfortivpn
 telegram-desktop
 cronie
 rsync
+alacritty
+barrier
+blueman
+bluez
+bat
+jq
+rsync
+sshpass
+nmap
+yt-dlp
+unzip
+nvidia-settings

@@ -209,12 +209,14 @@ alias cat="bat --theme=base16"
 alias ls='eza --icons=always --color=always -a'
 alias ll='eza --icons=always --color=always -la'
 
-## Folders
+## Personal
 alias work="cd ~/Documents/Trabajo"
 alias projects="cd ~/Documents/Proyectos"
 alias yt="cd ~/Documents/Youtube"
 alias ideas="cd ~/Documents/Ideas"
 alias zshcfg="nano ~/.zshrc"
+alias dm="yt-dlp -x --audio-format mp3 $1"
+alias scp_copy="scp ./*.mp3 dyallo@node03.local:$HOME/www/swing/music"
 
 ## Apps
 alias code="vscodium"
@@ -224,6 +226,18 @@ alias flameshot="$HOME/Apps/Flameshot.AppImage"
 alias keepass="$HOME/Apps/keepass.AppImage"
 alias chat="$HOME/Apps/simplex.AppImage"
 alias yt="$HOME/Apps/yt.AppImage"
+alias vid="$HOME/Apps/vid.AppImage"
+alias osu="$HOME/Apps/osu.AppImage"
+
+## Arch
+alias update_system="pacman -Syu"
+alias delpack='sudo pacman -Rcns'
+alias clear_cache="sudo pacman -Scc"
+alias clear_orphans="pacman -Qqd | sudo pacman -Rsu -"
+
+## Hacking
+alias exegol="cd /run/media/dyallo/Datos/python_environment/exegol; source bin/activate && exegol start"
+alias exegol_copy="docker cp $1 exegol-default:/workspace"
 
 ## Git
 alias g="git"
@@ -231,12 +245,14 @@ alias ga="git add"
 alias gcmsg="git commit -m"
 alias gp="git push"
 alias gl="git pull"
+alias gcb="git checkout -b"
 
 ## Server
-alias node00="ssh -i ~/.ssh/id_rsa dyallo@pi.local"
-alias node01="ssh -i ~/.ssh/id_rsa dyallo@node01.local"
-alias node02="ssh -i ~/.ssh/id_rsa dyallo@node02.local"
-alias kubernetes="ssh dyallo@node03.local"
+alias node00="ssh -i ~/.ssh/id_rsa -o IdentitiesOnly=yes dyallo@node00.local"
+alias node01="ssh -i ~/.ssh/id_rsa -o IdentitiesOnly=yes dyallo@node01.local"
+alias node02="ssh -i ~/.ssh/id_rsa -o IdentitiesOnly=yes dyallo@node02.local"
+alias node03="ssh -i ~/.ssh/id_rsa -o IdentitiesOnly=yes dyallo@node03.local"
+alias node04="ssh -i ~/.ssh/id_rsa -o IdentitiesOnly=yes dyallo@node04.local"
 
 # NVM Config
 export NVM_DIR="$HOME/.nvm"

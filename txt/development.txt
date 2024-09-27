@@ -1,0 +1,4 @@
+cargo-audit
+cargo-deny
+cargo-llvm-cov
+cargo-watch
