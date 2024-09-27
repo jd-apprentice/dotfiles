@@ -227,17 +227,12 @@ alias keepass="$HOME/Apps/keepass.AppImage"
 alias chat="$HOME/Apps/simplex.AppImage"
 alias yt="$HOME/Apps/yt.AppImage"
 alias vid="$HOME/Apps/vid.AppImage"
-alias osu="$HOME/Apps/osu.AppImage"
 
 ## Arch
 alias update_system="pacman -Syu"
 alias delpack='sudo pacman -Rcns'
 alias clear_cache="sudo pacman -Scc"
 alias clear_orphans="pacman -Qqd | sudo pacman -Rsu -"
-
-## Hacking
-alias exegol="cd /run/media/dyallo/Datos/python_environment/exegol; source bin/activate && exegol start"
-alias exegol_copy="docker cp $1 exegol-default:/workspace"
 
 ## Git
 alias g="git"
