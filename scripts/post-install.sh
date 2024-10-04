@@ -16,7 +16,6 @@ nvm install --lts
 
 sudo usermod -aG docker $USER
 newgrp docker
-systemctl start docker.service
 
 ######## clear ########
 
@@ -26,3 +25,5 @@ rm $HOME/RiceInstaller
 ######## rsync ########
 cp utils/.rsyncignore $HOME
 cp utils/backup /usr/local/bin/backup
+chmod +x /usr/local/bin/backup
+backup restore

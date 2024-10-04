@@ -24,3 +24,5 @@ nmap
 yt-dlp
 unzip
 nvidia-settings
+john
+hashcat

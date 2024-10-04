@@ -2,7 +2,7 @@
 
 # Permissions for the scripts
 for file in $(cat ./txt/scripts.txt);
-  do 
+  do
     chmod +x $file;
   done;
 
