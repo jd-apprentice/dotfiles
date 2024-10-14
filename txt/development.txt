@@ -2,3 +2,12 @@ cargo-audit
 cargo-deny
 cargo-llvm-cov
 cargo-watch
+rustup
+aws-cli
+azure-cli
+ansible-core
+terraform
+tableplus
+python-pip
+docker
+docker-compose

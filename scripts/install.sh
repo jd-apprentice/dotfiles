@@ -1,12 +1,9 @@
 #!/bin/bash
 
 arg=$1
+pacman_options=("txt/pacman.txt" "txt/development.txt" "txt/pentest.txt")
 
-pacman=pacman.txt
-yay=yay.txt
-repos=repos.txt
-
-if [[ "$arg" = "txt/$pacman" ]]; then
+if [[ " ${pacman_options[*]} " =~ " ${arg} " ]]; then
   echo "🔴 Installing pacman packages..."
   for f in $(cat "$arg");
   do 
@@ -34,6 +31,6 @@ if [[ "$arg" = "txt/$repos" ]]; then
   done;
 fi
 
-sudo pacman -Syu
+sudo pacman -Syyu
 echo "🏁 Done"
 clear
