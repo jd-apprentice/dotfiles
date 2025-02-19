@@ -1,9 +1,0 @@
-+ .zshrc
-+ rsyncignore
-+ Apps/***
-+ Documents/Backup/***
-+ ssh/***
-+ bspwm/***
-+ alacritty/***
-+ .config/
-- /***

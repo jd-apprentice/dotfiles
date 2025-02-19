@@ -20,11 +20,9 @@ pavucontrol
 rpi-imager
 rsync
 sshpass
-teams-for-linux-bin
 telegram-desktop
 tree
 unzip
-visual-studio-code-bin
 xclip
 yay
 yt-dlp
